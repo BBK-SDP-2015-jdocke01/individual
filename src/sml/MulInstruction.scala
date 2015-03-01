@@ -1,6 +1,6 @@
 package sml
 
-case class MulInstruction(label: String, opcode: String,  val result: Int, val op1: Int, val op2: Int) extends Instruction(label, opcode) {
+case class MulInstruction(label: String, opcode: String,  result: Int, op1: Int, op2: Int) extends Instruction(label, opcode) {
   override def toString(): String = {
      super.toString  + " register " +op1 + " * " + " register " +op2 + " to register " + result + "\n"
     

@@ -1,6 +1,6 @@
 package sml
 
-case class AddInstruction(label: String, op: String, val result: Int, val op1: Int, val op2: Int) extends Instruction(label, op) {
+case class AddInstruction(label: String, op: String, result: Int, op1: Int, op2: Int) extends Instruction(label, op) {
 
   override def execute(m: Machine) {
     val value1 = m.regs(op1)
